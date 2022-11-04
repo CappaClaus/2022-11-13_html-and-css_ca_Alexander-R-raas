@@ -12,7 +12,6 @@ header {
     align-items: center;
     max-height: 180px;
     background-color: rgb(56, 56, 255);
-    width: auto;
     }
 header img {
     max-width: 150px;
@@ -27,6 +26,63 @@ header img {
 }
 
 /*Shopping Page*/
+
+.super {
+    background-color:#FF5959;
+    width: 1740px;
+    height: 360px;
+    align-self: center;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.sale {
+    background-color: #FF0000;
+    width: 1680px;
+    height: 300px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.bestseller {
+    background-color: #FF0000;
+    width: 1740px;
+    height: 360px;
+    text-align: center;
+    color: white;
+}
+
+.bestsellers {
+    background-color: #00A3FF;
+    border-radius: 10px;
+}
+
+.bestsellers img {
+    max-width: 700px;
+    max-height: 425px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    margin: 50px auto;
+    grid-gap: 10px
+}
+
+.product {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.product img {
+    grid-column: -1/1;
+    max-width: 300px;
+}
 
 /*Product page*/
 
