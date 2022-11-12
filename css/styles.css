@@ -51,6 +51,7 @@ body {
         text-align: center;
         justify-content: space-between;
         padding-left: 100px;
+        margin: 10px auto 10px 50px;
     }
 
     .header h1 {
@@ -65,7 +66,6 @@ body {
     }
 
     .header ul :hover {
-        text-transform: uppercase;
         text-decoration: underline;
     }
 
@@ -74,6 +74,7 @@ body {
         text-decoration: none;
         font-size: 1.8em;
     }
+
 
 
 header img {
@@ -87,9 +88,16 @@ header img {
     display: flex;
     align-items: center;
     max-height: 180px;
-    gap: 300px;
+    gap: 30em;
     background-color: #00A3FF;
     padding: 10px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 2.5em;
 }
 
 .footing {
@@ -121,8 +129,8 @@ header img {
 }
 
 footer img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .buynow {
@@ -181,8 +189,9 @@ footer img {
 /*Home Page*/
 
 .Home-img {
-width: 1030px;
-height: 555px;
+width: 1000px;
+height: 500px;
+filter: contrast(200%);
 }
 
 .background-home {
@@ -204,6 +213,23 @@ height: 555px;
 
 /*Shopping Page*/
 
+.shupping-cart-bg {
+    background-image: url(/images/background-imgs/person-wearing-yellow-jacket-.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    position: relative;
+}
+
+.shupping-cart-bg::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.219);
+}
+
 .super {
     background-color:#FF5959;
     padding: 30px 60px;
@@ -216,6 +242,10 @@ height: 555px;
     margin-top: 2.5em;
     margin-left: 2em;
     margin-right: 2em;
+}
+
+.super a {
+    text-decoration: none;
 }
 
 .padding {
@@ -235,7 +265,6 @@ height: 555px;
     max-width: 1680px;
     max-height: 300px;
     margin: auto;
-    font-stretch: 100%;
 }
 
 
@@ -401,9 +430,6 @@ height: 555px;
     text-decoration: none;
 }
 
-.buynow :hover {
-    background-color: #00A3FF;
-}
 
 .buy-now {
     background-color: yellow;
@@ -574,6 +600,11 @@ height: 555px;
 
 
 .background-about-us {
+    background-image: url(/images/background-imgs/seljalandsfoss-waterfall-iceland.jpg);
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.5;
 }
 
 .background-about-us image {
@@ -648,7 +679,7 @@ height: 555px;
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin-left: 600px;
+    margin-left: 40em;
     margin-right: auto;
     margin-top: 100px;
 }
@@ -835,7 +866,7 @@ select {
 
 .supersale ul {
     text-align: left;
-    margin-left: 50px;
+    margin: 10px auto;
 }
 
 .supersaling {
@@ -859,5 +890,5 @@ select {
   }
 
   .buy-div :hover {
-    background-color: #00A3FF;
+    background-color: #FF5959;
   }
