@@ -1,5 +1,6 @@
 p, h1, h2, h3, h4 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
 }
 
 h4 {
@@ -91,6 +92,10 @@ header img {
     gap: 30em;
     background-color: #00A3FF;
     padding: 10px;
+}
+
+.footer a {
+    text-decoration: none;
 }
 
 #footer {
@@ -189,9 +194,11 @@ footer img {
 /*Home Page*/
 
 .Home-img {
-width: 1000px;
-height: 500px;
+max-width: 1000px;
+max-height: 500px;
 filter: contrast(200%);
+margin: 2em auto;
+position: relative;
 }
 
 .background-home {
@@ -214,34 +221,25 @@ filter: contrast(200%);
 /*Shopping Page*/
 
 .shupping-cart-bg {
-    background-image: url(/images/background-imgs/person-wearing-yellow-jacket-.jpg);
+    background-color: rgb(208, 230, 255);
     background-repeat:no-repeat;
-    background-size:100%;
+    background-size:100% 100vh;
     position: relative;
 }
 
-.shupping-cart-bg::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(255, 255, 255, 0.219);
-}
 
 .super {
     background-color:#FF5959;
-    padding: 30px 60px;
+    padding: 1em 2em;
     text-align: center;
     color: black;
     text-decoration: none;
     font-size: 2em;
-    max-width: 1740px;
-    max-height: 360px;
     margin-top: 2.5em;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 1000px;
 }
 
 .super a {
@@ -255,16 +253,15 @@ filter: contrast(200%);
 .sale {
     background-color: red;
     font-size: 60px;
-    padding: 130px 750px;
+    padding: 1em 5em;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
     font-weight: bold;
     color: white;
     border: 2px black solid;
-    max-width: 1680px;
-    max-height: 300px;
     margin: auto;
+    position: relative;
 }
 
 
@@ -281,11 +278,11 @@ filter: contrast(200%);
     font-weight: bold;
     color: white;
     border: 2px black solid;
-    max-width: 1740px;
+    max-width: 1000px;
     margin-top: 2.5em;
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: -200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
 }
 
 .bestsellers {
@@ -466,13 +463,15 @@ filter: contrast(200%);
     object-fit: cover;
     text-align: center;
 }
-.background-payment image {
-    opacity: 0.2;
+
+.background-payment h1 {
+    margin-top: 70px;
 }
 
 .cardinfor {
     max-width: 1000px;
     margin: auto;
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -779,7 +778,7 @@ filter: contrast(200%);
 }
 
 .itemsincart {
-    background-color: #005CFF;
+    background-color: rgba(90, 165, 252, 1);
     color: black;
     padding: 40px 100px;
     border-radius: 20px;
@@ -835,6 +834,7 @@ filter: contrast(200%);
     text-align: center;
     max-width: 300px;
     margin: auto;
+    margin-top: 70px;
 }
 
 input,
@@ -851,11 +851,11 @@ select {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1000px;
-    margin: 200px auto; 
+    max-width: 900px;
+    margin: auto auto 200px auto; 
     grid-gap: 10px;
     background-color: #00A3FF;
-    border-radius: 30px;
+    border-radius: 0px 0px 30px 30px;
     padding: 100px;
 }
 
@@ -894,8 +894,113 @@ select {
   }
 
 
+
+
+  @media (min-width: 1515px) {
+
+  }
   /*Media quarry full size*/
 
-  /*Media quarry tablet*/
+  @media only screen 
+    and (min-width : 1350px) {
+            footer {
+            max-width: 100%;
+        }
+            header {
+            max-width: 100%;
 
+        }
+            .super {
+                margin-left: 5em;
+                max-width: 72%;
+        }
+        .bestseller {
+            margin-left: 5em;
+        }
+
+        .supersale {
+            margin-left: 10em;
+        }
+
+        .products {
+            margin-left: 8em;
+        }
+        .footer {
+            gap: 10em;
+        }
+        
+        .Home-img {
+            margin-top: 70px;
+        }
+
+        footer {
+            display: none;
+        }
+
+    }
+ 
+
+    /*Media quarry tablet*/
+
+    @media only screen 
+    and (min-device-width : 480px) 
+    and (max-device-width : 1349px) {
+
+        body {
+            font-size: 0.8rem;
+        }
+        footer {
+            max-width: 100%;
+            margin: auto auto 0px auto;
+        }
+        .background-home {
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: relative
+        }
+            .super {
+                margin-left: 2em;
+                max-width: 38%;
+        }
+
+        .sale {
+            font-size: 36px;
+        }
+        .bestseller {
+            margin-left: 5em;
+        }
+
+        .supersale {
+            margin-left: 4em;
+            margin-right: 4em;
+        }
+
+        .supersale img {
+            max-width: 50%;
+        }
+
+        .products {
+            margin-left: 8em;
+        }
+        .footer {
+            gap: 10em;
+        }
+        
+        .Home-img {
+            margin-top: 70px;
+        }
+
+    }
+  
+  
   /*Media quarry phone*/
+
+  @media (max-width: 480px) {
+    .featured {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .review1,
+    .reviewt {
+      flex-direction: row;
+    }
+   }
