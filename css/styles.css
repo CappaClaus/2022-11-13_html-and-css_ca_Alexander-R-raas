@@ -1,3 +1,5 @@
+/* Main Body, header and footer*/                               /* Main Body, header and footer*/
+
 p, h1, h2, h3, h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -14,9 +16,7 @@ image {
 
 header {
     margin: 0;
-    padding-top: 0;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px 0px auto 0px;
 }
 
 body {
@@ -42,9 +42,7 @@ body {
     text-align: center;
     align-self: top;
     margin: 0;
-    padding-top: 0;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px 0px auto 0px;
     }
 
     .header-links {
@@ -114,9 +112,7 @@ header img {
     font-size: 1em;
     color: black;
     text-decoration: none;
-    border: 1px;
-    border-color: black;
-    border-style: solid;
+    border: 1px black solid;
     width: 300px;
     text-align: center;
 }
@@ -146,57 +142,16 @@ footer img {
 .buynow {
     background-color: white;
     font-size: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding: 0.8rem 3rem;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    font-weight: bold;
-    color: black;
-    border: 1px;
-    border-style: solid;
+    border: 1px black solid;
     border-radius: 20px;
 }
 
 
-.buynowno {
-    background-color: white;
-    font-size: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    color: black;
-    border: 1px;
-    border-style: solid;
-    width: 150px;
-    border-radius: 20px;
-}
-
-.buynowno-small {
-    background-color: white;
-    font-size: 0.9rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    color: black;
-    border: 1px;
-    border-style: solid;
-    width: 150px;
-    border-radius: 20px;
-}
-/*Home Page*/
+/*Home Page*/                                                                           /*Home Page*/
 
 .Home-img {
 max-width: 1000px;
@@ -222,7 +177,7 @@ position: relative;
 
 
 
-/*Shopping Page*/
+/*Shopping Page*/                                                                   /*Shopping Page*/
 
 .shupping-cart-bg {
     background-color: rgb(208, 230, 255);
@@ -245,6 +200,7 @@ position: relative;
     position: relative;
     max-width: 1000px;
 }
+
 
 .super a {
     text-decoration: none;
@@ -272,10 +228,7 @@ position: relative;
 .bestseller {
     background-color: red;
     font-size: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 5rem 3rem;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
@@ -283,10 +236,7 @@ position: relative;
     color: white;
     border: 2px black solid;
     max-width: 1000px;
-    margin-top: 2.5em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
+    margin: 2.5rem auto 0px auto;
 }
 
 .bestsellers {
@@ -355,7 +305,7 @@ position: relative;
 }
 
 
-/*Product info page*/
+/*Product info page*/                                                               /*Product info page*/
 
 .shopping-info {
     display: flex;
@@ -436,17 +386,12 @@ position: relative;
     background-color: yellow;
     color: black;
     font-size: 1rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 5rem;
     text-align: center;
     text-decoration: none;
     border-radius: 15px;
     font-weight: bold;
-    border: 1px;
-    border-color: black;
-    border-style: solid;
+    border: 1px black solid;
     border-radius: 5px;
 }
 
@@ -459,7 +404,9 @@ position: relative;
     text-align: center;
     font-weight: bold;
 }
-/*Payment*/ 
+
+/*Payment*/                                                                                    /*Payment*/ 
+
 .background-payment {
     background-color: rgb(208, 230, 255);
     min-height: 500px;
@@ -501,10 +448,7 @@ position: relative;
 .cancelnreturn {
     background-color: #005CFF;
     font-size: 1rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 5rem;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -521,10 +465,7 @@ position: relative;
 .paynow {
     background-color: #005CFF;
     font-size: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding: 0.8rem 3rem ;
     border-radius: 5px;
     text-decoration: none;
     grid-row: 2;
@@ -542,7 +483,7 @@ position: relative;
     display: block;
 }
 
-/*Successess*/
+/*Successess*/                                                                      /*Successess*/
 
 .succssess  {
     background-color: #005CFF;
@@ -578,10 +519,7 @@ position: relative;
 .return-to-shopping {
     background-color: #FFDD2C;
     font-size: 1rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 5rem;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -593,13 +531,10 @@ position: relative;
 
 .return-to-shopping-alignment {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px auto;
 }
 
-/*About us*/
+/*About us*/                                                            /*About us*/
 
 
 .background-about-us {
@@ -620,9 +555,7 @@ position: relative;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1000px;
     grid-gap: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
+    margin: 100px auto auto auto;
 }
 .about-us {
     display: flex;
@@ -690,9 +623,7 @@ position: relative;
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin-left: 40em;
-    margin-right: auto;
-    margin-top: 100px;
+    margin: 100px auto auto 40em;
 }
 
 .pushing p {
@@ -705,7 +636,9 @@ position: relative;
     margin-top: 16px;
     margin-left: 8px;
 }
-/*Locations*/
+
+
+/*Locations*/                                                                   /*Locations*/
 
 .maps {
     text-align: center;
@@ -713,9 +646,7 @@ position: relative;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1000px;
     grid-gap: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
+    margin: 100px auto auto auto;
 }
 
 .maps img {
@@ -729,9 +660,10 @@ position: relative;
     flex-direction: row;
     max-width: 1000px;
     align-self: flex-start;
+    background-color: rgb(208, 230, 255);
 }
 .maprow p {
-    margin-left: -90px;
+    margin-left: -110px;
     margin-right: 30px;
     flex: 1 1 auto;
 }
@@ -749,13 +681,10 @@ position: relative;
 .find-us-div {
     width: 400px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin: 150px auto;
 }
 
-/*Shopping cart*/
+/*Shopping cart*/                                                                       /*Shopping cart*/
 
 .infoproduct {
     display: grid;
@@ -801,10 +730,7 @@ position: relative;
 .items-in-cart-div {
     width: 600px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin: 150px auto 100px auto;
 }
 
 .checkout {
@@ -823,10 +749,7 @@ position: relative;
 .checkout-div {
     width: 600px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 100px;
+    margin: 10px auto 100px auto;
 }
 
 .shopping-cart {
@@ -840,7 +763,7 @@ position: relative;
     border: 1px solid black;
     width: 1000px;
 }
-/*Contact us*/
+/*Contact us*/                                                                          /*Contact us*/
 
 .contactus {
     text-align: center;
@@ -857,7 +780,7 @@ select {
   padding: 10px 60px;
 }
 
-/*Super sale*/
+/*Super sale*/                                                                          /*Super sale*/
 
 .supersale {
     text-align: center;
@@ -1064,10 +987,7 @@ select {
         .find-us-div {
             width: 380px;
             text-align: center;
-            margin-left: 50px;
-            margin-right: auto;
-            margin-top: 150px;
-            margin-bottom: 100px;
+            margin: 150px auto 100px 50px;
         }
 
         .maps {
@@ -1269,10 +1189,7 @@ select {
 
         #HERE {
             margin: -15px;
-            padding-top: 55px;
-            padding-bottom: 32px;
-            padding-left: 60px;
-            padding-right: 60px;
+            padding: 55px 60px 32px 60px;
         }
 
         .backgroundcolour {
@@ -1281,14 +1198,3 @@ select {
     }
   
   
-  /*Media quarry phone*/
-
-  @media (max-width: 480px) {
-    .featured {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .review1,
-    .reviewt {
-      flex-direction: row;
-    }
-   }
