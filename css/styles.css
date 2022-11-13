@@ -25,6 +25,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     overflow-x: hidden;
+    background-color: rgb(208, 230, 255);
 }
 
 .phone-and-email {
@@ -90,12 +91,16 @@ header img {
     align-items: center;
     max-height: 180px;
     gap: 30em;
-    background-color: #00A3FF;
     padding: 10px;
 }
 
 .footer a {
     text-decoration: none;
+}
+
+.backgroundcolour {
+    background-color: #00A3FF;
+    padding: 0px 10px;
 }
 
 #footer {
@@ -204,10 +209,7 @@ position: relative;
 .background-home {
     background-image: url(/images/background-imgs/seljalandsfoss-waterfall-iceland.jpg);
     background-repeat:no-repeat;
-    background-size:100%;
-    background-position:bottom top;
-    height: 100%;
-    object-fit: fill;
+    background-size: 100% 100%;
 }
 
 .align-picture {
@@ -669,6 +671,14 @@ position: relative;
 
 .about-us-text {
     text-align: center;
+    font-size: 24px;
+    max-width: 495px;
+    align-self: center;
+    margin: 50px auto;
+}
+
+.about-us-text h1 {
+    font-size: 30px;
 }
 
 .about-us-text p {
@@ -899,9 +909,7 @@ select {
 
 
   @media (min-width: 1515px) {
-    footer {
-        display: none;
-    }
+
   }
   /*Media quarry full size*/
 
@@ -938,18 +946,12 @@ select {
             margin-top: 70px;
         }
 
-        footer {
-            display: none;
-        }
-
     }
  
 
     /*Media quarry*/
 
-    @media only screen 
-    and (min-device-width : 600px) 
-    and (max-device-width : 1349px) {
+    @media (max-device-width : 1349px) {
 
         body {
             font-size: 0.8rem;
@@ -962,21 +964,16 @@ select {
             max-width: 100%;
             margin: auto auto 0px auto;
         }
-        .background-home {
-            background-repeat: no-repeat;
-            background-size: 100%;
-            position: relative
-        }
             .super {
                 margin-left: 2em;
-                max-width: 38%;
+                max-width: 50%;
         }
 
         .Home-img {
             max-width: 390px;
             max-height: 210px;
-            align-self: center;
-            margin-left: -200px;
+            margin-top: 83px;
+            margin-left: auto;
         }
 
         .sale {
@@ -985,10 +982,20 @@ select {
         .bestseller {
             margin-left: 2.3em;
             font-size: 20px;
-            max-width: 37%;
+            max-width: 50%;
             padding: 5%;
         }
 
+        .supersaling {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 10px auto;
+            margin-left: -57px;
+            gap: 8px;
+            margin-right: 81px;
+            max-height: 100%;
+        }
 
         .supersaling img {
             width: 172px;
@@ -998,7 +1005,7 @@ select {
         .supersale {
             margin-left: 3.5em;
             margin-right: 4em;
-            max-width: 30%;
+            max-width: 37%;
             max-height: 15%;
             gap: 30px;
             padding-left: 104px;
@@ -1007,6 +1014,8 @@ select {
 
         .superduper {
             max-height: 25%;
+            max-width: 38%;
+            margin-left: 54px;
         }
 
 
@@ -1047,9 +1056,6 @@ select {
             gap: 10em;
         }
         
-        .Home-img {
-            margin-top: 70px;
-        }
 
 
         .find-us {
@@ -1210,6 +1216,67 @@ select {
 
         .suss-text {
             margin-left: 90px;
+        }
+
+        .header {
+            max-height: 100px;
+        }
+
+        .header-links {
+            margin: 0px;
+        }
+
+        .header-links ul {
+            gap: 30px;
+            margin-left: -586px;
+            margin-top: 68px;
+        }
+
+        .header-links h1 {
+            display: none;
+        }
+        .header img {
+            max-width: 114px;
+            margin-top: -31px;
+            margin-left: 300px;
+        }
+
+        .footer {
+            gap: 4em;
+            margin-left: 80px;
+            margin-right: auto;
+        }
+
+        .footer img {
+            max-width: 114px;
+        }
+
+        .footing p {
+            display: none;
+        }
+
+        .footing h3 {
+            padding: 30px;
+        }
+
+        .footing {
+            width: 140px;
+        }
+
+        .footer-text {
+            font-size: 1em;
+        }
+
+        #HERE {
+            margin: -15px;
+            padding-top: 55px;
+            padding-bottom: 32px;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .backgroundcolour {
+            width: 100%;
         }
     }
   
