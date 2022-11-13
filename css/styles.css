@@ -204,8 +204,10 @@ position: relative;
 .background-home {
     background-image: url(/images/background-imgs/seljalandsfoss-waterfall-iceland.jpg);
     background-repeat:no-repeat;
-    background-size:100% 100vh;
-    position: relative;
+    background-size:100%;
+    background-position:bottom top;
+    height: 100%;
+    object-fit: fill;
 }
 
 .align-picture {
@@ -457,7 +459,7 @@ position: relative;
 }
 /*Payment*/ 
 .background-payment {
-    background-image: url(/images/background-imgs/person-wearing-yellow-jacket-.jpg);
+    background-color: rgb(208, 230, 255);
     min-height: 500px;
     border: 2px;
     object-fit: cover;
@@ -897,12 +899,15 @@ select {
 
 
   @media (min-width: 1515px) {
-
+    footer {
+        display: none;
+    }
   }
   /*Media quarry full size*/
 
   @media only screen 
-    and (min-width : 1350px) {
+    and (min-width : 1350px) 
+    and (max-device-width : 1514px) {
             footer {
             max-width: 100%;
         }
@@ -940,14 +945,18 @@ select {
     }
  
 
-    /*Media quarry tablet*/
+    /*Media quarry*/
 
     @media only screen 
-    and (min-device-width : 480px) 
+    and (min-device-width : 600px) 
     and (max-device-width : 1349px) {
 
         body {
             font-size: 0.8rem;
+        }
+
+        main {
+            align-items: center;
         }
         footer {
             max-width: 100%;
@@ -963,24 +972,76 @@ select {
                 max-width: 38%;
         }
 
+        .Home-img {
+            max-width: 390px;
+            max-height: 210px;
+            align-self: center;
+            margin-left: -200px;
+        }
+
         .sale {
             font-size: 36px;
         }
         .bestseller {
-            margin-left: 5em;
+            margin-left: 2.3em;
+            font-size: 20px;
+            max-width: 37%;
+            padding: 5%;
+        }
+
+
+        .supersaling img {
+            width: 172px;
+            height: 208px;
         }
 
         .supersale {
-            margin-left: 4em;
+            margin-left: 3.5em;
             margin-right: 4em;
+            max-width: 30%;
+            max-height: 15%;
+            gap: 30px;
+            padding-left: 104px;
+            align-items: center;
         }
 
-        .supersale img {
-            max-width: 50%;
+        .superduper {
+            max-height: 25%;
         }
 
+
+        .buynow {
+            font-size: 0.8rem;
+            padding: 0.8rem 1rem;
+        }
         .products {
             margin-left: 8em;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 500px;
+            margin: -200px auto auto -10px; 
+            grid-gap: 10px;
+            border-radius: 30px;
+            padding: 100px;
+        }
+
+        .products img {
+            width: 110px;
+            height: 140px;
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+            align-items: center;
+            padding-top: 10px;
+        }
+
+        .product ul {
+            margin-left: -16px;
         }
         .footer {
             gap: 10em;
@@ -990,6 +1051,166 @@ select {
             margin-top: 70px;
         }
 
+
+        .find-us {
+            font-size: 1rem;
+        }
+        .find-us-div {
+            width: 380px;
+            text-align: center;
+            margin-left: 50px;
+            margin-right: auto;
+            margin-top: 150px;
+            margin-bottom: 100px;
+        }
+
+        .maps {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 10px;
+            margin-left: 50px;
+            margin-top: 100px;
+            max-width: 65%;
+          }
+        
+
+        .maps img {
+            max-width: 50%;
+            max-height: 50%;
+        }
+
+        .maprow {
+            margin-top: 30px
+        }
+
+        .maprow p {
+            max-width: 80px;
+            margin-left: -50px;
+            margin-top: 25px;
+        }
+
+
+        .items-in-cart-div {
+            margin-left: 50px
+        }
+
+        .itemsincart {
+            font-size: 1rem;
+            max-width: 50%;
+        }
+
+        .border-shopping-cart {
+            max-width: 500px;
+            margin-left: 50px;
+        }
+
+        .border-shopping-cart img {
+            max-width: 140px;
+            max-height: 169px;
+        }
+
+        .find-us-div {
+            margin-left: 50px;
+        }
+
+        .infoproduct {
+            max-width: 250px;
+            margin-left: 120px;
+        }
+
+        .info-product {
+            margin-left: -40px;
+        }
+
+        .checkout-div {
+            margin-left: -50px;
+        }
+
+        .find-us-div {
+            margin-left: 85px;
+        }
+
+        .about-us {
+            margin-left: 0px;
+        }
+
+        .about-us p {
+            max-width: 184px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .about-us-text {
+            max-width: 450px;
+            margin-left: 50px;
+            font-size: 1rem;
+        }
+
+        .aboutus-info {
+            max-width: 500px;
+            margin-left: 50px;
+        }
+
+        .aboutus-info img {
+            max-width: 225px;
+            max-height: 185px;
+        }
+
+        .about-us1 {
+            margin-left: -500px;
+        }
+
+        .about-us1 p {
+            max-width: 184px;
+            font-size: 14px;
+        }
+
+        .pushing {
+            margin-left: 50px;
+        }
+
+        .pushing p {
+            font-size: 1rem;
+        }
+
+        .pushing h5 {
+            font-size: 1.5rem;
+            margin-top: 7px;
+        }
+
+        .contactus {
+            margin-left: 50px;
+        }
+
+        .shopping-info {
+            margin-left: -700px;
+            margin-top: 50px;
+        }
+
+        .background-payment {
+            margin-left: -650px;
+        }
+
+        .background-payment h1 {
+            font-size: 1.5rem;
+        }
+
+        .succssess img {
+            max-width: 390px;
+            max-height: 290px;
+            margin-left: -670px;
+        }
+
+        .suss img {
+            max-width: 100px;
+            margin-top: -60px;
+            margin-left: -700px;
+        }
+
+        .suss-text {
+            margin-left: 90px;
+        }
     }
   
   
