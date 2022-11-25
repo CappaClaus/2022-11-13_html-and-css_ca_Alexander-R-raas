@@ -1,6 +1,6 @@
 /* Main Body, header and footer*/                               /* Main Body, header and footer*/
 
-p, h1, h2, h3, h4 {
+p, h1, h2, h3, h4, body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
@@ -17,6 +17,9 @@ image {
 header {
     margin: 0;
     padding: 0px 0px auto 0px;
+    justify-content: space-between;
+    display: flex;
+    background-color: #00A3FF;
 }
 
 body {
@@ -63,6 +66,7 @@ body {
         display: flex;
         gap: 70px;
         list-style-type: none;
+        flex-wrap: wrap;
     }
 
     .header ul :hover {
@@ -75,7 +79,7 @@ body {
         font-size: 1.8em;
     }
 
-
+  
 
 header img {
     max-width: 200px;
@@ -107,6 +111,12 @@ header img {
     width: 100%;
     min-height: 2.5em;
 }
+
+footer {
+    justify-content: space-between;
+    display: flex;
+    background-color: #00A3FF;
+     }
 
 .footing {
     font-size: 1em;
@@ -844,6 +854,8 @@ select {
         }
             header {
             max-width: 100%;
+            position: relative;
+            justify-content: space-between;
 
         }
             .super {
@@ -874,10 +886,387 @@ select {
 
     /*Media quarry*/
 
-    @media (max-device-width : 1349px) {
+    @media (max-device-width : 549px) {
+
+        header {
+            position: relative;
+        }
 
         body {
+            font-size: 10px;
+        }
+         
+
+        h3 {
+            font-size: 18px;
+        }
+        main {
+            align-items: center;
+        }
+        footer {
+            max-width: 100%;
+            margin: auto auto 0px auto;
+            position: relative;
+        }
+            .super {
+                margin-left: 34px;
+                max-width: 42%;
+        }
+
+        .Home-img {
+            max-width: 100%;
+            max-height: 140px;
+            margin-top: 83px;
+            margin-left: auto;
+        }
+
+        .align-picture {
+            text-align: center;
+            width: 390px;
+        }
+
+        .sale {
+            font-size: 15px;
+        }
+        .bestseller {
+            margin-left: 2.3em;
+            font-size: 15px;
+            max-width: 50%;
+            padding: 20px;
+        }
+
+        .supersaling {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 10px auto;
+            margin-left: -57px;
+            gap: 8px;
+            margin-right: 81px;
+            max-height: 100%;
+            font-size: 16px;
+        }
+
+        .supersaling img {
+            width: 172px;
+            height: 208px;
+        }
+
+        .supersale {
+            margin-left: 3.5em;
+            margin-right: 4em;
+            max-width: 16%;
+            max-height: 34%;
+            gap: 30px;
+            padding-left: 104px;
+            align-items: center;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .supersale ul {
+            font-size: 14px;
+        }
+
+        .superduper {
+            max-height: 64%;
+            max-width: 16%;
+            margin-left: 34px;
+        }
+
+
+        .buynow {
             font-size: 0.8rem;
+            padding: 0.8rem 1rem;
+        }
+        .products {
+            margin-left: 8em;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 500px;
+            margin-left: -27%;
+            grid-gap: 10px;
+            border-radius: 30px;
+            padding: 100px;
+            grid-template-columns: repeat(1, 1fr);
+            font-size: 14px;
+        }
+
+        .products img {
+            width: 110px;
+            height: 140px;
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+            align-items: center;
+            padding-top: 10px;
+        }
+
+        .product ul {
+            margin-left: -16px;
+        }
+        .footer {
+            gap: 10em;
+        }
+        
+
+
+        .find-us {
+            font-size: 1rem;
+            width: 50%;
+        }
+        .find-us-div {
+            width: 380px;
+            text-align: center;
+            margin: 150px auto 100px 20px;
+        }
+
+        .maps {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 10px;
+            margin-left: 50px;
+            margin-top: 100px;
+            max-width: 65%;
+          }
+        
+
+        .maps img {
+            max-width: 100%;
+            max-height: 50%;
+        }
+
+        .maprow {
+            margin-top: 30px
+        }
+
+        .maprow p {
+            max-width: 80px;
+            margin-left: -65px;
+            margin-top: 25px;
+        }
+
+        
+        .return-to-shopping {
+            margin-left: -15%;
+        }
+        .items-in-cart-div {
+            margin-left: 41px;
+            max-width: 43%;
+        }
+
+        .itemsincart {
+            font-size: 14px;
+            padding: 10px 50px;
+            width: 190px;
+        }
+
+        .border-shopping-cart {
+            max-width: 27%;
+            margin-left: 50px;
+            
+        }
+
+        .border-shopping-cart img {
+            max-width: 140px;
+            max-height: 169px;
+        }
+
+
+        .infoproduct {
+            max-width: 250px;
+            margin-left: 120px;
+        }
+
+        .info-product {
+            margin-left: -40px;
+        }
+
+        .checkout-div {
+            margin-left: 0px;
+            width: 280px;
+        }
+
+
+        .about-us {
+            margin-left: -43px;
+            width: 98%;
+        }
+
+        .about-us p {
+            max-width: 184px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .about-us-text {
+            max-width: 450px;
+            margin-left: 50px;
+            font-size: 1rem;
+            width: 57%;
+        }
+
+        .aboutus-info {
+            max-width: 500px;
+            margin-left: 50px;
+        }
+
+        .aboutus-info img {
+            max-width: 185px;
+            max-height: 185px;
+        }
+
+        .about-us1 {
+            margin-left: -329px;
+            width: 300px;
+        }
+
+        .about-us1 p {
+            max-width: 184px;
+            font-size: 14px;
+        }
+
+        .pushing {
+            margin-left: 50px;
+            max-width: 74%;
+        }
+
+        .pushing p {
+            font-size: 1rem;
+        }
+
+        .pushing h5 {
+            font-size: 1.5rem;
+            margin-top: 7px;
+        }
+
+        .contactus {
+            margin-left: 50px;
+        }
+
+        .shopping-info {
+            margin-left: 0px;
+            margin-top: 50px;
+        }
+
+        .buying {
+            padding: 100px;
+            width: 100%;
+            margin: auto auto auto -30px;
+        }
+
+        .background-payment {
+            margin-left: 0px;
+        }
+
+        .background-payment h1 {
+            font-size: 1.5rem;
+        }
+
+        .succssess img {
+            max-width: 390px;
+            max-height: 290px;
+            margin-left: 0px;
+        }
+
+        .suss img {
+            max-width: 100px;
+            margin-top: -60px;
+            margin-left: -27px;
+        }
+
+        .suss-text {
+            margin-left: 40px;
+            font-size: 14px;
+        }
+
+        .return-to-shopping-alignment {
+            margin: 100px auto auto 20px;
+        }
+
+
+        .header {
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-links {
+            margin: 0px;
+            padding-left: 0px;
+        }
+
+        .header-links ul {
+            gap: 13px;
+            margin-top: -10px;
+        }
+
+        .header-links h1 {
+            display: none;
+        }
+        .header img {
+            max-width: 114px;
+            margin-top: -31px;
+            margin-left: 0px;
+        }
+
+         .header ul :hover {
+            text-decoration: underline;
+            text-transform: capitalize;
+         }
+
+        .footer {
+            gap: 8px;
+            margin-left: 0px;
+            margin-right: auto;
+        }
+
+        .footer img {
+            max-width: 114px;
+        }
+
+        .footing p {
+            display: none;
+        }
+
+        .footing h3 {
+            padding: 10px;
+        }
+
+        .footing {
+            width: 100px;
+        }
+
+        .footer-text {
+            font-size: 1em;
+        }
+
+        #HERE {
+            margin: 13px;
+            padding: 10px 20px 22px 20px;
+        }
+
+        .backgroundcolour {
+            width: 100%;
+        }
+    }
+  
+  
+
+    @media only screen 
+    and (min-width : 550px) 
+    and (max-device-width : 1349px) {
+        header {
+            position: relative;
+        }
+
+        body {
+            font-size: 10px;
         }
 
         main {
@@ -893,14 +1282,19 @@ select {
         }
 
         .Home-img {
-            max-width: 390px;
-            max-height: 210px;
+            max-width: 100%;
+            max-height: 140px;
             margin-top: 83px;
             margin-left: auto;
         }
 
+        .align-picture {
+            text-align: center;
+            width: 390px;
+        }
+
         .sale {
-            font-size: 36px;
+            font-size: 15px;
         }
         .bestseller {
             margin-left: 2.3em;
@@ -1139,17 +1533,19 @@ select {
         }
 
         .header {
-            max-height: 100px;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
         }
 
         .header-links {
             margin: 0px;
+            padding-left: 0px;
         }
 
         .header-links ul {
-            gap: 30px;
-            margin-left: -586px;
-            margin-top: 68px;
+            gap: 13px;
+            margin-top: -10px;
         }
 
         .header-links h1 {
@@ -1158,12 +1554,17 @@ select {
         .header img {
             max-width: 114px;
             margin-top: -31px;
-            margin-left: 300px;
+            margin-left: 0px;
         }
+
+         .header ul :hover {
+            text-decoration: underline;
+            text-transform: capitalize;
+         }
 
         .footer {
             gap: 4em;
-            margin-left: 80px;
+            margin-left: 0px;
             margin-right: auto;
         }
 
@@ -1176,11 +1577,11 @@ select {
         }
 
         .footing h3 {
-            padding: 30px;
+            padding: 10px;
         }
 
         .footing {
-            width: 140px;
+            width: 100px;
         }
 
         .footer-text {
@@ -1188,13 +1589,11 @@ select {
         }
 
         #HERE {
-            margin: -15px;
-            padding: 55px 60px 32px 60px;
+            margin: 23px;
+            padding: 10px 20px 22px 20px;
         }
 
         .backgroundcolour {
             width: 100%;
         }
     }
-  
-  
