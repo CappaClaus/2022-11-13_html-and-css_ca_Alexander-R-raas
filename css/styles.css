@@ -221,31 +221,29 @@ position: relative;
     padding-top: 20px;
 }
 
-.sale {
-    background-color: red;
-    font-size: 60px;
-    padding: 1em 5em;
+
+
+.seeller {
+    background-color: rgb(194, 0, 0);
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
     font-weight: bold;
     color: white;
     border: 2px black solid;
+}
+
+.sale {
+    font-size: 60px;
+    padding: 1em 5em;
     margin: auto;
     position: relative;
 }
 
 
 .bestseller {
-    background-color: red;
     font-size: 2rem;
     padding: 5rem 3rem;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    border: 2px black solid;
     max-width: 1000px;
     margin: 2.5rem auto 0px auto;
 }
@@ -335,40 +333,28 @@ position: relative;
     margin-bottom: -30px;
 }
 
-.redbutton {
-    background-color: #FF0000;
+
+.button {
     padding: 10px;
     color: white;
     border: 1px black solid;
     text-align: center;
     font-weight: bold;
+}
+.redbutton {
+    background-color: #FF0000;
 }
 
 .bluebutton {
     background-color: blue;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    border: 1px black solid;
 }
 
 .blackbutton {
     background-color: black;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    border: 1px black solid;
 }
 
 .pinkbutton {
     background-color: pink;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    border: 1px black solid;
 }
 
 .buttons-wrap {
@@ -456,17 +442,19 @@ position: relative;
     flex-direction: column
 }
 
-.cancelnreturn {
-    background-color: #005CFF;
+.bluecnel {
+    background-color: #005CFF; 
     font-size: 1rem;
-    padding: 1rem 5rem;
     border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
     grid-row: 2;
     grid-column: 2;
-    color: white;
     border: black 1px solid;
+    color: white;
+}
+.cancelnreturn {
+    padding: 1rem 5rem;
+    font-weight: bold;
 }
 
 .cancelnreturn-div {
@@ -474,16 +462,8 @@ position: relative;
 }
 
 .paynow {
-    background-color: #005CFF;
-    font-size: 1rem;
     padding: 0.8rem 3rem ;
-    border-radius: 5px;
-    text-decoration: none;
-    grid-row: 2;
-    grid-column: 2;
-    color: white;
     margin: 100px;
-    border: black 1px solid;
 }
 
 .paynow-div {
