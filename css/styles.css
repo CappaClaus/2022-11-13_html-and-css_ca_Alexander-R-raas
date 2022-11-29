@@ -102,10 +102,6 @@ header img {
     text-decoration: none;
 }
 
-.backgroundcolour {
-    background-color: #00A3FF;
-    padding: 0px 10px;
-}
 
 #footer {
     position: absolute;
@@ -257,7 +253,7 @@ position: relative;
     grid-template-columns: 1fr auto;
     align-items: center;
     padding: auto;
-    width: 1780px;
+    max-width: 1780px;
 }
 
 .bestsellers img {
