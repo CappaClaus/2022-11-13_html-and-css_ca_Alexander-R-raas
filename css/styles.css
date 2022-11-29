@@ -879,7 +879,6 @@ select {
         }
         footer {
             max-width: 100%;
-            margin: auto auto 0px auto;
             position: relative;
         }
             .super {
@@ -1239,7 +1238,6 @@ select {
         }
         footer {
             max-width: 100%;
-            margin: auto auto 0px auto;
         }
             .super {
                 margin-left: 2em;
