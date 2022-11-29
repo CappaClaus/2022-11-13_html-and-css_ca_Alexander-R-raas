@@ -940,7 +940,8 @@ select {
         .superduper {
             max-height: 64%;
             max-width: 16%;
-            margin-left: 34px;
+            margin-top: -22px;
+            margin-bottom: 50px;
         }
 
 
