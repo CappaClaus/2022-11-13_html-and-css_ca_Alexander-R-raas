@@ -44,7 +44,7 @@ body {
     background-color: #00A3FF;
     text-align: center;
     align-self: top;
-    margin: 0;
+    margin: auto;
     padding: 0px 0px auto 0px;
     }
 
@@ -64,9 +64,10 @@ body {
 
     .header ul {
         display: flex;
-        gap: 70px;
+        gap: 10px;
         list-style-type: none;
         flex-wrap: wrap;
+        padding: 10px;
     }
 
     .header ul :hover {
@@ -92,8 +93,9 @@ header img {
     display: flex;
     align-items: center;
     max-height: 180px;
-    gap: 30em;
+    gap: 30px;
     padding: 10px;
+    margin: auto;
 }
 
 .footer a {
@@ -1158,6 +1160,7 @@ select {
             min-height: 100px;
             display: flex;
             flex-direction: column;
+            margin: auto auto auto 20px;
         }
 
         .header-links {
@@ -1169,6 +1172,7 @@ select {
             gap: 13px;
             margin-top: -10px;
             font-size: 6px;
+            padding: 0px;
         }
 
         .header-links h1 {
